@@ -1,3 +1,4 @@
+
 /* -----------------------------
    Combined stylesheet (base + main)
    Generated: consolidated single `styles.css`
@@ -22,25 +23,16 @@
   --color-gray-400: #9ca3af;
   --color-gray-600: #4b5563;
   --color-gray-700: #374151;
-  --color-whatsapp: #25d366;
-  --color-whatsapp-dark: #20ba5a;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #20BA5A;
 }
 
 html {
-  font-size: 15px;
   scroll-behavior: smooth;
 }
 
-@media (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-}
-
 body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: var(--color-gray-700);
   background-color: var(--color-light);
@@ -66,15 +58,16 @@ body {
 
 /* Containers */
 .container-wide {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .container-faq {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 /* Icons */
@@ -258,12 +251,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(10, 22, 40, 0.95),
-    rgba(10, 22, 40, 0.85),
-    rgba(10, 22, 40, 0.7)
-  );
+  background: linear-gradient(to right, rgba(10, 22, 40, 0.95), rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.7));
 }
 
 .hero-content {
@@ -280,7 +268,7 @@ body {
 }
 
 .hero-title {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 1.5rem;
@@ -391,8 +379,7 @@ body {
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
@@ -416,11 +403,7 @@ body {
 }
 
 .bg-dark {
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
 }
 
 /* Decorative Circles */
@@ -497,21 +480,11 @@ body {
 }
 
 .section-title {
-  font-size: 1.85rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-dark);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
-}
-
-.about-title {
-  white-space: nowrap;
-}
-
-@media (max-width: 1023px) {
-  .about-title {
-    white-space: normal;
-  }
 }
 
 /* Utility overrides: used when combining utility classes with section styles */
@@ -577,11 +550,7 @@ body {
 .service-icon {
   width: 4rem;
   height: 4rem;
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -628,7 +597,7 @@ body {
 }
 
 .service-features li::before {
-  content: "";
+  content: '';
   display: block;
   width: 0.375rem;
   height: 0.375rem;
@@ -641,11 +610,7 @@ body {
 
 /* Service CTA */
 .service-cta {
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
   padding: 2.5rem;
   border-radius: 1rem;
   border: 2px solid var(--color-gold);
@@ -683,6 +648,8 @@ body {
   transform: scale(1.05);
   box-shadow: 0 20px 45px rgba(212, 175, 55, 0.5);
 }
+
+
 
 /* About Section */
 .about-grid {
@@ -843,34 +810,32 @@ body {
 }
 
 /* FAQ two-column layout: questions on the left, logo on the right */
-.faq-grid {
+.container-faq .faq-grid {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   align-items: flex-start;
 }
 
-.faq-list {
-  flex: 1 1 60%;
+.container-faq .faq-list {
+  order: 1;
+  flex: 1 1 40%;
 }
 
-.faq-side {
-  flex: 0 0 500px;
+.container-faq .faq-side {
+  order: 0;
+  flex: 0 0 480px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .faq-logo-img {
-  width: 480px;
+  width: 420px;
   max-width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.faq-logo-img:hover {
-  transform: scale(1.05);
 }
 
 @media (max-width: 767px) {
@@ -879,8 +844,45 @@ body {
   }
 
   .faq-side {
-    padding-bottom: 2rem;
+    order: -1;
+    padding-top: 1rem;
+    flex: 0 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .faq-list {
+    order: 2;
+  }
+
+  .faq-logo-img {
+    width: 260px;
+    margin-bottom: 1rem;
+  }
+
+  /* Fade-in for mobile logo */
+  .faq-logo-img {
+    opacity: 0;
+    animation: fade-in 600ms ease forwards;
+    animation-delay: 120ms;
+  }
+
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+  /* Make hero adapt on small screens instead of fixed 100vh */
+  .hero {
+    height: auto;
+    padding: 3.5rem 0 2rem;
+    align-items: flex-start;
+  }
+
+  /* Reduce header spacing on small screens */
+  .header-content {
+    padding: 0.5rem 0;
   }
 }
 
@@ -912,12 +914,7 @@ body {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(10, 22, 40, 0.95),
-    rgba(10, 22, 40, 0.5),
-    transparent
-  );
+  background: linear-gradient(to top, rgba(10, 22, 40, 0.95), rgba(10, 22, 40, 0.5), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -981,7 +978,7 @@ body {
 }
 
 .gallery-indicator::after {
-  content: "";
+  content: '';
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--color-gold);
@@ -1041,11 +1038,7 @@ body {
 }
 
 .testimonial-card {
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
   padding: 2rem;
   border-radius: 0.5rem;
   border: 2px solid var(--color-gold);
@@ -1152,11 +1145,7 @@ body {
 
 /* Social Proof CTA */
 .social-proof-cta {
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
   padding: 2rem;
   border-radius: 1rem;
   border: 2px solid var(--color-gold);
@@ -1223,7 +1212,7 @@ body {
   border: none;
   text-align: left;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-dark);
 }
@@ -1257,11 +1246,7 @@ body {
 
 /* FAQ CTA */
 .faq-cta {
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-dark-alt) 100%
-  );
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-alt) 100%);
   padding: 2rem;
   border-radius: 0.5rem;
   border: 2px solid var(--color-gold);
@@ -1294,7 +1279,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0 auto 4rem;
 }
 
@@ -1366,7 +1351,7 @@ body {
   padding: 3rem;
   border-radius: 1rem;
   border: 2px solid var(--color-gold);
-  max-width: 60rem;
+  max-width: 64rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -1662,14 +1647,14 @@ body {
 }
 
 .legal-section::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 3rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 420px;
-  height: 420px;
-  background-image: url("assets/img/logo-servinstalaciones.png");
+  width: 360px;
+  height: 360px;
+  background-image: url('/assets/img/logo-servinstalaciones.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1785,8 +1770,7 @@ body {
 }
 
 @keyframes pulse {
-  75%,
-  100% {
+  75%, 100% {
     transform: scale(1.5);
     opacity: 0;
   }
@@ -1822,8 +1806,7 @@ body {
 }
 
 @keyframes pulse-indicator {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
@@ -1848,17 +1831,11 @@ body {
   animation: pulse-indicator 2s infinite;
 }
 
-.whatsapp-tooltip.hidden
-  + .whatsapp-btn
-  + .whatsapp-helper
-  + .whatsapp-notification {
+.whatsapp-tooltip.hidden + .whatsapp-btn + .whatsapp-helper + .whatsapp-notification {
   display: block;
 }
 
-.whatsapp-tooltip:not(.hidden)
-  + .whatsapp-btn
-  + .whatsapp-helper
-  + .whatsapp-notification {
+.whatsapp-tooltip:not(.hidden) + .whatsapp-btn + .whatsapp-helper + .whatsapp-notification {
   display: none;
 }
 
@@ -1943,11 +1920,11 @@ body {
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   .section-title {
-    font-size: 2.75rem;
+    font-size: 3.125rem;
   }
 
   .services-grid {
@@ -1956,12 +1933,6 @@ body {
 
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
-    align-items: flex-start;
-    margin-top: 3rem;
-  }
-
-  .about-stats {
-    margin-top: 0;
   }
 
   .testimonials-grid {
@@ -1977,3 +1948,14 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .container-wide {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-wide {
+    max-width: 1200px;
+  }
+}

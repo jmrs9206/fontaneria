@@ -1,672 +1,964 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Fontanería Urgente 24h y Limpieza Post-Obra en Madrid | Servinstalaciones S&R</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Servicios premium de fontanería 24h y limpieza post-obra en Madrid. Expertos en fugas, desatascos, reformas y limpieza fina para viviendas y locales. ¡Pide presupuesto!">
-    <meta name="keywords"
-        content="fontanero madrid, fontanería urgente, limpieza post obra, desatascos madrid, reforma baño, servinstalaciones">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://servinstalaciones.com/">
-    <meta property="og:title" content="Fontanería Urgente 24h y Limpieza Post-Obra en Madrid | Servinstalaciones S&R">
-    <meta property="og:description"
-        content="Servicios premium de fontanería 24h y limpieza post-obra en Madrid. Calidad garantizada en reparaciones y limpiezas de fin de obra.">
-    <meta property="og:image" content="https://servinstalaciones.com/assets/img/logo-Servinstalaciones.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://servinstalaciones.com/">
-    <meta property="twitter:title"
-        content="Fontanería Urgente 24h y Limpieza Post-Obra en Madrid | Servinstalaciones S&R">
-    <meta property="twitter:description"
-        content="Servicios premium de fontanería 24h y limpieza post-obra en Madrid. Calidad garantizada en reparaciones y limpiezas de fin de obra.">
-    <meta property="twitter:image" content="https://servinstalaciones.com/assets/img/logo-Servinstalaciones.png">
-
-    <link rel="canonical" href="https://servinstalaciones.com/">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- Iconos redes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="index.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ServInstalaciones — Fontanería y Limpieza Post-Obra</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-    <a href="#inicio" class="skip-link">Saltar al contenido principal</a>
 
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-        <nav class="navbar" aria-label="Navegación principal">
-            <div class="brand">
-                <div class="brand-mark">
-                    <!-- Logo en imagen -->
-                    <img src="assets/img/logo-Servinstalaciones.png" alt="Logo de Servinstalaciones S&R"
-                        class="brand-logo">
-                </div>
-                <div class="brand-text">
-                    <span class="brand-name">Servinstalaciones S&R</span>
-                    <span class="brand-tagline">Fontanería & Limpieza</span>
-                </div>
+  <header id="header" class="header">
+    <div class="container-wide header-content">
+      <div class="logo-container">
+        <img src="assets/img/logo-servinstalaciones.png" alt="ServInstalaciones" class="logo-image">
+        <div class="logo-text">Serv<span class="text-gold">Instalaciones</span></div>
+      </div>
+
+      <nav class="nav-desktop">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="cta-desktop">
+        <a href="tel:+34671422554" class="btn-primary">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>Llamar Ahora</span>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+        <svg class="icon menu-icon" id="menuIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="icon close-icon hidden" id="closeIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#inicio" class="nav-link-mobile">Inicio</a>
+        <a href="#servicios" class="nav-link-mobile">Servicios</a>
+        <a href="#nosotros" class="nav-link-mobile">Nosotros</a>
+        <a href="#galeria" class="nav-link-mobile">Galería</a>
+        <a href="#faq" class="nav-link-mobile">FAQ</a>
+        <a href="#contacto" class="nav-link-mobile">Contacto</a>
+        <a href="tel:+34671422554" class="btn-primary-mobile">Llamar Ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-background">
+      <img src="assets/img/banos-de-lujo-modernos.png" alt="Luxury Interior" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container-wide hero-content">
+      <div class="hero-divider"></div>
+      <h1 class="hero-title">
+        Excelencia en <span class="text-gold">Fontanería</span>
+        <br>y <span class="text-gold">Limpieza Post-Obra</span>
+      </h1>
+      <p class="hero-subtitle">
+        Servicios premium para espacios que reflejan su distinción. <br>
+        <span class="hero-subtitle-highlight">Más de 20 años transformando espacios de lujo en Madrid</span>
+      </p>
+      
+      <!-- Trust Badges -->
+      <div class="trust-badges">
+        <div class="badge">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+          </svg>
+          <span>Certificación ISO</span>
+        </div>
+        <div class="badge">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span>Servicio 24/7</span>
+        </div>
+        <div class="badge">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          <span>Garantía 5 Años</span>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios%20premium" target="_blank" rel="noopener noreferrer" class="btn-hero-primary">
+          Solicitar Presupuesto Gratis
+        </a>
+        <a href="#servicios" class="btn-hero-secondary">
+          Conocer Servicios
+        </a>
+      </div>
+
+      <p class="hero-note">
+        <br/>
+        ✓ Presupuesto sin compromiso en 24h  ✓ Primera consulta gratuita
+      </p>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#servicios" class="scroll-indicator">
+      <svg class="icon animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  
+
+  <!-- Services Section -->
+  <section id="servicios" class="section bg-white">
+    <div class="decorative-circle top-right"></div>
+    <div class="decorative-circle bottom-left"></div>
+
+    <div class="container-wide">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">Servicios Premium</div>
+        <h2 class="section-title">
+          Soluciones a Medida para Espacios <span class="text-gold">Excepcionales</span>
+        </h2>
+        <p class="section-description">
+          Ofrecemos servicios integrales de fontanería y limpieza con los más altos estándares de calidad. 
+          <span class="highlight-text">Cada proyecto es único, cada resultado es perfecto.</span>
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-highlight">Garantía 5 años</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Instalaciones de Fontanería Premium</h3>
+          <p class="service-description">Sistemas de fontanería de alta gama con acabados impecables y materiales de lujo certificados.</p>
+          <ul class="service-features">
+            <li>Grifería de diseño exclusivo</li>
+            <li>Sistemas inteligentes de agua</li>
+            <li>Instalación de bañeras y duchas de lujo</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-highlight">Acabado perfecto</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Limpieza Post-Obra de Lujo</h3>
+          <p class="service-description">Limpieza exhaustiva y meticulosa que deja su propiedad impecable y lista para disfrutar.</p>
+          <ul class="service-features">
+            <li>Limpieza profunda profesional</li>
+            <li>Eliminación total de residuos</li>
+            <li>Pulido y cristalizado de superficies</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-highlight">Servicio VIP</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Mantenimiento Integral Premium</h3>
+          <p class="service-description">Servicios de mantenimiento preventivo y correctivo con respuesta inmediata.</p>
+          <ul class="service-features">
+            <li>Revisiones periódicas programadas</li>
+            <li>Reparaciones urgentes prioritarias</li>
+            <li>Plan de mantenimiento personalizado</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-highlight">Certificación ISO</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Garantía Total de Excelencia</h3>
+          <p class="service-description">Todos nuestros trabajos cuentan con certificación ISO y garantía completa extendida.</p>
+          <ul class="service-features">
+            <li>Garantía 5 años en instalaciones</li>
+            <li>Materiales certificados europeos</li>
+            <li>Personal altamente cualificado</li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-highlight">Respuesta inmediata</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Disponibilidad 24/7</h3>
+          <p class="service-description">Atención inmediata para emergencias y servicio prioritario cuando nos necesite.</p>
+          <ul class="service-features">
+            <li>Urgencias 24 horas</li>
+            <li>Respuesta en menos de 2h</li>
+            <li>Equipo siempre disponible</li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-highlight">+5000 clientes satisfechos</div>
+          <div class="service-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Experiencia de Alto Standing</h3>
+          <p class="service-description">Más de 20 años ofreciendo servicios exclusivos a los clientes más exigentes de Madrid.</p>
+          <ul class="service-features">
+            <li>Trato VIP personalizado</li>
+            <li>Discreción absoluta garantizada</li>
+            <li>Resultados que superan expectativas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="service-cta">
+        <h3 class="service-cta-title">¿Necesita un servicio personalizado?</h3>
+        <p class="service-cta-text">Cada proyecto es único. Consúltenos y le ofreceremos una solución a medida.</p>
+        <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20necesito%20información%20sobre%20un%20servicio%20personalizado" target="_blank" rel="noopener noreferrer" class="btn-cta">
+          Consultar Ahora Sin Compromiso
+        </a>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="nosotros" class="section bg-dark">
+    <div class="decorative-circle-dark top-right"></div>
+    <div class="decorative-circle-dark bottom-left"></div>
+
+    <div class="container-wide">
+      <div class="section-badge">Sobre Nosotros</div>
+      <h2 class="section-title text-white about-title">
+        Compromiso con la <span class="text-gold">Excelencia</span>
+      </h2>
+
+      <div class="about-grid">
+        <!-- Left Content -->
+        <div class="about-content">
+          <p class="about-text">
+            En ServInstalaciones, nos especializamos en ofrecer servicios de fontanería y limpieza post-obra de la más alta calidad para clientes que valoran la perfección en cada detalle.
+          </p>
+          <p class="about-text-secondary">
+            <span class="text-gold-bold">Nuestra filosofía:</span> atención meticulosa, materiales de lujo certificados, y un trato VIP personalizado que supera las expectativas de los clientes más exigentes de Madrid.
+          </p>
+
+          <!-- Values List -->
+          <ul class="values-list">
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Profesionalidad y discreción absoluta en cada servicio</span>
+            </li>
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Materiales de primera calidad y certificados europeos</span>
+            </li>
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Personal altamente cualificado, uniformado y verificado</span>
+            </li>
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Puntualidad extrema y respeto total por su tiempo</span>
+            </li>
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Presupuestos 100% transparentes sin sorpresas</span>
+            </li>
+            <li class="value-item">
+              <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Garantía completa de 5 años en todos nuestros trabajos</span>
+            </li>
+          </ul>
+
+          <!-- Trust Indicator -->
+          <div class="trust-box">
+            <p class="trust-title">¿Por qué elegirnos?</p>
+            <p class="trust-text">
+              Somos la elección preferida de arquitectos, diseñadores de interiores y propietarios de inmuebles de lujo en Madrid. Nuestro compromiso con la calidad y la satisfacción del cliente nos ha convertido en líderes del sector premium.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Content - Stats -->
+        <div class="about-stats">
+          <div class="stats-box">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Años de Experiencia</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Proyectos Completados</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Clientes Satisfechos</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Disponibilidad</div>
+              </div>
             </div>
 
-            <button class="nav-toggle" aria-label="Abrir menú de navegación" id="navToggle" aria-expanded="false"
-                aria-controls="navLinks">
-                <span></span><span></span><span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinks" role="list">
-                <li><a href="#inicio">Inicio</a></li>
-
-                <!-- Dropdown Servicios -->
-                <li class="nav-item-servicios">
-                    <a href="#servicios" class="nav-servicios-link">Servicios</a>
-                </li>
-
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#opiniones">Opiniones</a></li>
-                <li><a href="#faq">Preguntas</a></li>
-                <li><a href="#contacto" class="nav-cta">Pedir presupuesto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <!-- HERO --->
-        <section id="inicio" class="hero" aria-labelledby="hero-title">
-            <div class="hero-inner">
-                <div class="hero-copy">
-                    <span class="hero-pill">· Servicio PREMIUM ·</span>
-                    <h1 id="hero-title">Fontanería profesional y limpieza post-obra impecable</h1>
-                    <p>
-                        Nos encargamos de reparación de averías, instalaciones nuevas y limpieza fina tras la obra,
-                        para que solo tengas que entrar y disfrutar de tu vivienda o negocio.
-                    </p>
-
-                    <div class="hero-badges">
-                        <span>🚨 Urgencias 24/7</span>
-                        <span>🔧 Técnicos certificados</span>
-                        <span>✨ Limpieza de detalle</span>
-                        <span>📍Madrid y alrededores</span>
-                    </div>
-                </div>
-                <div class="hero-media">
-                    <div class="hero-main-image">
-                        <img src="assets/img/logo-Servinstalaciones.png" alt="Fontanero y equipo de limpieza post-obra">
-                    </div>
-
-
-
-                    <div class="hero-stats">
-                        <div class="stat-card">
-                            <span class="stat-number">+850 </span>
-                            <span class="stat-label"> Proyectos terminados</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">4,9★ </span>
-                            <span class="stat-label"> Valoración media clientes</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">24h </span>
-                            <span class="stat-label">Respuesta máxima en incidencias</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICIOS -->
-        <section id="servicios" class="section reveal">
-            <div class="section-header">
-                <span class="section-kicker">Qué hacemos</span>
-                <h2>Servicios integrales de fontanería y limpieza post-obra</h2>
-                <p>Trabajamos tanto para particulares como para comunidades y locales comerciales.</p>
+            <div class="quote-box">
+              <blockquote class="quote-text">
+                "La perfección no es un detalle, es nuestra norma. Cada proyecto es una oportunidad para demostrar nuestro compromiso absoluto con la excelencia y superar las expectativas."
+              </blockquote>
+              <div class="quote-author">— Equipo ServInstalaciones</div>
             </div>
 
-            <div class="services-grid">
-                <!-- Fontanería urgente -->
-                <article class="service-card">
-                    <div class="service-image">
-                        <img src="assets/img/servicio-fontaneria-urgente.jpg" alt="Fontanero urgente reparando tubería">
-                    </div>
-                    <div class="service-body">
-                        <h3>Fontanería urgente 24h</h3>
-                        <p>
-                            Fugas, reventones, bajantes, humedades… Acudimos con rapidez y resolvemos la avería
-                            minimizando
-                            daños.
-                        </p>
-                        <ul>
-                            <li>Fontaneros 24 horas</li>
-                            <li>Fugas de agua</li>
-                            <li>Desatrancos</li>
-                            <li>Reparaciones de fontanería</li>
-                            <li>Servicio Pocero</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Instalaciones y reformas -->
-                <article class="service-card">
-                    <div class="service-image">
-                        <img src="assets/img/servicio-reforma-bano-cocina.jpg" alt="Reforma de baño y cocina">
-                    </div>
-                    <div class="service-body">
-                        <h3>Instalaciones y reformas</h3>
-                        <p>
-                            Renovamos la instalación de fontanería en baños, cocinas y locales, adaptándonos al nuevo
-                            diseño
-                            de tu obra.
-                        </p>
-                        <ul>
-                            <li>Reformas Baños</li>
-                            <li>Reforma Cocina</li>
-                            <li>Instalaciones de fontanería</li>
-                            <li>Instalador Suelo Radiante</li>
-                            <li>Instalador Termo eléctrico</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Limpieza post-obra -->
-                <article class="service-card">
-                    <div class="service-image">
-                        <img src="assets/img/servicio-limpieza-post-obra.jpg" alt="Limpieza post-obra en vivienda">
-                    </div>
-                    <div class="service-body">
-                        <h3>Limpieza post-obra profesional</h3>
-                        <p>
-                            Eliminamos hasta el último resto de obra: polvo fino, pintura, cemento, silicona… Dejamos
-                            todo
-                            listo para entrar.
-                        </p>
-                        <ul>
-                            <li>Limpieza de suelos, azulejos y juntas</li>
-                            <li>Cristales, marcos y persianas</li>
-                            <li>Limpieza y desinfección de baños y cocina</li>
-                            <li>Limpieza de zonas comunes y garajes</li>
-                            <li>Eliminación de restos de obra y embalajes</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Servicios para comunidades/negocios -->
-                <article class="service-card">
-                    <div class="service-image">
-                        <img src="assets/img/servicio-comunidades-negocios.jpg"
-                            alt="Servicio de fontanería y limpieza en comunidad">
-                    </div>
-                    <div class="service-body">
-                        <h3>Comunidades y negocios</h3>
-                        <p>
-                            Soluciones continuas para comunidades de propietarios, promotoras y locales comerciales.
-                        </p>
-                        <ul>
-                            <li>Calefacción y Calderas</li>
-                            <li>Instalador Caldera</li>
-                            <li>Reparación Calderas</li>
-                            <li>Mantenimientos y revisiones periódicas</li>
-                            <li>Limpieza de portales, escaleras y zonas comunes</li>
-                        </ul>
-                    </div>
-                </article>
+            <!-- Certifications -->
+            <div class="certifications">
+              <div class="cert-item">
+                <div class="cert-value">ISO</div>
+                <div class="cert-label">Certificado</div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-value">5★</div>
+                <div class="cert-label">Valoración</div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-value">A+</div>
+                <div class="cert-label">Calidad</div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- VIDEOS -->
-        <section id="videos" class="section section-alt reveal">
-            <div class="section-header">
-                <span class="section-kicker">Nuestro Trabajo</span>
-                <h2>Trabajo en Acción</h2>
-                <p>Mira ejemplos de nuestros proyectos completados y la calidad de nuestro trabajo.</p>
+  <!-- Gallery Section -->
+  <section id="galeria" class="section bg-light">
+    <div class="container-wide">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">Galería Premium</div>
+        <h2 class="section-title">
+          Nuestros <span class="text-gold">Proyectos de Lujo</span>
+        </h2>
+        <p class="section-description">
+          Una muestra de la calidad excepcional y atención al detalle que caracteriza cada uno de nuestros trabajos.
+          <span class="highlight-text">Perfección en cada proyecto</span>
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1625578324458-a106197ff141?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Suite Premium - Hotel Boutique" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <div class="gallery-category">Fontanería Premium</div>
+              <h3 class="gallery-title">Suite Premium - Hotel Boutique</h3>
+              <p class="gallery-description">Instalación completa de baño de lujo</p>
             </div>
+          </div>
+          <div class="gallery-indicator"></div>
+        </div>
 
-            <div class="videos-grid">
-                <article class="video-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="">
-                            <source src="assets/video/2025-12-18 18-30-52.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reforma de Baño Completa</h3>
-                        <p>Instalación de fontanería y limpieza post-obra en Chamartín.</p>
-                    </div>
-                </article>
-
-                <article class="video-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="">
-                            <source src="assets/video/2025-12-18 18-30-52 copy.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h3>Limpieza Post-Obra Oficinas</h3>
-                        <p>Entrega impecable de espacio de oficinas recién reformado.</p>
-                    </div>
-                </article>
-
-                <article class="video-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata" poster="">
-                            <source src="assets/video/2025-12-18 18-30-52 copy 2.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reparación Urgente 24h</h3>
-                        <p>Solución rápida de fuga en comunidad de vecinos.</p>
-                    </div>
-                </article>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1744828367881-97196efa6ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Grifería de Diseño Exclusivo" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <div class="gallery-category">Instalaciones de Lujo</div>
+              <h3 class="gallery-title">Grifería de Diseño Exclusivo</h3>
+              <p class="gallery-description">Materiales certificados de primera calidad</p>
             </div>
-        </section>
+          </div>
+          <div class="gallery-indicator"></div>
+        </div>
 
-        <!-- DIFERENCIADORES -->
-        <section class="section section-alt reveal">
-            <div class="section-header">
-                <span class="section-kicker">Por qué elegirnos</span>
-                <h2>Un único equipo para obra, agua y limpieza</h2>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1760129745103-91c4022ed5fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Renovación Integral Premium" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <div class="gallery-category">Post-Obra Excellence</div>
+              <h3 class="gallery-title">Renovación Integral Premium</h3>
+              <p class="gallery-description">Acabados impecables garantizados</p>
             </div>
+          </div>
+          <div class="gallery-indicator"></div>
+        </div>
 
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>Coordinación total</h3>
-                    <p>
-                        Fontaneros y equipo de limpieza trabajan coordinados. Sin esperas entre gremios ni “parches”
-                        improvisados.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Detalle premium</h3>
-                    <p>
-                        Revisamos juntas, cromados, mamparas, cristales y rincones. No es una limpieza rápida: es un
-                        acabado
-                        de entrega.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Presupuesto cerrado</h3>
-                    <p>
-                        Te entregamos un presupuesto detallado antes de empezar, sin letra pequeña ni sorpresas al final
-                        del
-                        trabajo.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Seguro de responsabilidad civil</h3>
-                    <p>
-                        Trabajamos con seguro en vigor y podemos emitir informes para tu compañía de seguros si lo
-                        necesitas.
-                    </p>
-                </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1650337771276-1ff47d60a7df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Residencia Privada de Lujo" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <div class="gallery-category">Limpieza Post-Obra</div>
+              <h3 class="gallery-title">Residencia Privada de Lujo</h3>
+              <p class="gallery-description">Listos para estrenar</p>
             </div>
-        </section>
+          </div>
+          <div class="gallery-indicator"></div>
+        </div>
+      </div>
 
-        <!-- PROCESO -->
-        <section id="proceso" class="section reveal">
-            <div class="section-header">
-                <span class="section-kicker">Así trabajamos</span>
-                <h2>Proceso claro de inicio a fin</h2>
-            </div>
+      <!-- Gallery CTA -->
+      <div class="gallery-cta">
+        <h3 class="gallery-cta-title">¿Quiere ver su proyecto aquí?</h3>
+        <p class="gallery-cta-text">
+          Transformamos espacios ordinarios en extraordinarios. Su proyecto de lujo merece el mejor servicio premium.
+        </p>
+        <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20me%20gustaría%20consultar%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" class="btn-gallery">
+          Comenzar Mi Proyecto Ahora
+        </a>
+      </div>
+    </div>
+  </section>
 
-            <div class="steps-grid">
-                <div class="step-card">
-                    <span class="step-number">1</span>
-                    <h3>Visita o videollamada</h3>
-                    <p>Revisamos estado de la obra, necesidades de fontanería y nivel de limpieza requerido.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-number">2</span>
-                    <h3>Presupuesto detallado</h3>
-                    <p>Te enviamos un presupuesto desglosado por partidas, con fechas estimadas de ejecución.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-number">3</span>
-                    <h3>Ejecución de trabajos</h3>
-                    <p>Realizamos las reparaciones/instalaciones y a continuación la limpieza post-obra.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-number">4</span>
-                    <h3>Revisión final contigo</h3>
-                    <p>Revisamos juntos el resultado, resolvemos dudas y dejamos todo listo para entrar a vivir o abrir.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <!-- Testimonials Section -->
+  <section class="section bg-white">
+    <div class="decorative-circle top-left"></div>
 
-        <!-- OPINIONES -->
-        <section id="opiniones" class="section section-alt reveal">
-            <div class="section-header">
-                <span class="section-kicker">Clientes reales</span>
-                <h2>Opiniones de quienes ya han confiado en nosotros</h2>
-            </div>
+    <div class="container-wide">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">Testimonios</div>
+        <h2 class="section-title">
+          Lo Que Dicen Nuestros <span class="text-gold">Clientes</span>
+        </h2>
+        <p class="section-description">
+          La confianza de nuestros clientes es nuestro mayor reconocimiento. <br>
+          <span class="highlight-text">100% de satisfacción garantizada</span>
+        </p>
+      </div>
 
-            <div class="carousel" id="opinionesCarousel">
-                <div class="carousel-track">
-                    <article class="testimonial">
-                        <p>
-                            “Reforma completa de baño y después limpieza post-obra. Puntuales, limpios y muy
-                            profesionales.
-                            Entramos a vivir sin tener que limpiar nada.”
-                        </p>
-                        <span class="testimonial-name">María y Jorge · centro</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Tuvimos una fuga importante en el local. Arreglaron la avería y coordinaron la limpieza en
-                            un
-                            solo día. Nos salvaron de cerrar más tiempo.”
-                        </p>
-                        <span class="testimonial-name">Laura · Gerente de cafetería</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Obra en toda la vivienda. Vinieron al final para revisar fontanería y hacer la limpieza
-                            fina.
-                            Muy cuidadosos con los detalles.”
-                        </p>
-                        <span class="testimonial-name">Comunidad C/ Alcalá ·</span>
-                    </article>
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+          </div>
+          <div class="stars">
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "ServInstalaciones transformó completamente nuestro baño principal con un nivel de detalle excepcional. La profesionalidad, discreción y puntualidad fueron impecables. Sin duda, un servicio premium que supera las expectativas más altas. Lo recomiendo absolutamente."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">María González</div>
+            <div class="author-role">Propietaria Residencia Privada</div>
+          </div>
+        </div>
 
-                    <!-- 6 opiniones nuevas -->
-                    <article class="testimonial">
-                        <p>
-                            “Cambio de caldera y revisión completa de la instalación. Trabajo rápido, limpio y bien
-                            explicado.
-                            Se nota que dominan la parte técnica.”
-                        </p>
-                        <span class="testimonial-name">Sergio · Vivienda unifamiliar</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Nos hicieron la fontanería de dos baños nuevos y la limpieza post-obra del piso. Entrega en
-                            plazo
-                            y comunicación constante durante todo el proceso.”
-                        </p>
-                        <span class="testimonial-name">Patricia · Barrio de Salamanca</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Contratamos limpieza post-obra para un edificio de oficinas. Dejaron cristales, suelos y
-                            baños
-                            impecables. Pudimos abrir sin retrasos.”
-                        </p>
-                        <span class="testimonial-name">Javier · Administrador de fincas</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Tenía humedades recurrentes en la comunidad. Detectaron el origen de la fuga y lo
-                            solucionaron
-                            sin romper más de lo necesario.”
-                        </p>
-                        <span class="testimonial-name">Presidencia · Comunidad en Getafe</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Llamamos de urgencia un domingo por la noche. Atendieron rápido, cortaron la fuga y al día
-                            siguiente dejaron todo reparado y limpio.”
-                        </p>
-                        <span class="testimonial-name">Ana · Alquiler turístico</span>
-                    </article>
-                    <article class="testimonial">
-                        <p>
-                            “Coordinan con la constructora y con la propiedad. Para nosotros, que gestionamos varias
-                            reformas al mes, es clave tener un proveedor así.”
-                        </p>
-                        <span class="testimonial-name">Rubén · Empresa de reformas</span>
-                    </article>
-                </div>
-                <div class="carousel-dots" id="opinionesDots"></div>
-            </div>
-        </section>
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+          </div>
+          <div class="stars">
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Hemos confiado en ServInstalaciones para todas las renovaciones de nuestras suites de lujo. Su atención al detalle, discreción absoluta y calidad de trabajo son incomparables. El equipo es profesional y eficiente. Altamente recomendados para proyectos de alto standing."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Carlos Martínez</div>
+            <div class="author-role">Director Hotel Boutique</div>
+          </div>
+        </div>
 
-        <!-- FAQ -->
-        <section id="faq" class="section reveal">
-            <div class="section-header">
-                <span class="section-kicker">Preguntas frecuentes</span>
-                <h2>Resolvemos tus dudas antes de empezar</h2>
-            </div>
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+          </div>
+          <div class="stars">
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Como arquitecta de proyectos de lujo, trabajo solo con los mejores profesionales. ServInstalaciones es mi elección exclusiva para todos mis proyectos premium. Su atención meticulosa al detalle y acabados impecables son verdaderamente excepcionales. Confianza total."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Isabel Rodríguez</div>
+            <div class="author-role">Arquitecta de Interiores</div>
+          </div>
+        </div>
+      </div>
 
-            <div class="faq-grid">
-                <details class="faq-item">
-                    <summary>¿Trabajáis solo en capital?</summary>
-                    <p>Sí. Trabajamos principalmente en Madrid capital y en toda la zona metropolitana, pero también
-                        cubrimos municipios cercanos cuando el servicio lo requiere.
-                        Realizamos desplazamientos a viviendas, comunidades y locales comerciales en prácticamente todo
-                        el
-                        cinturón de la Comunidad de Madrid.
-                        Si tu dirección está algo más lejos, consúltanos y te confirmamos la disponibilidad y el tiempo
-                        estimado de llegada.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>¿Puedo contratar solo limpieza post-obra?</summary>
-                    <p>Sí. Puedes contratar únicamente la limpieza post-obra sin necesidad de solicitar ningún servicio
-                        de
-                        fontanería.
-                        Realizamos limpiezas finas, limpiezas profundas y entregas de obra tanto en viviendas como en
-                        oficinas o locales.
-                        También puedes solicitar solo fontanería, o bien ambos servicios combinados para una entrega
-                        totalmente lista para entrar a vivir o abrir al público.
-                        Nos adaptamos a lo que necesite cada cliente.
-                    </p>
-                </details>
-                <details class="faq-item">
-                    <summary>¿El presupuesto es gratuito?</summary>
-                    <p>Sí. El presupuesto es totalmente gratuito y sin compromiso.
-                        Normalmente podemos darte un precio aproximado con unas pocas preguntas o mediante fotos/vídeo.
-                        En trabajos más complejos o cuando es necesario verificar medidas, accesos o instalaciones,
-                        podemos
-                        realizar una visita técnica previa, igualmente sin coste.
-                        Siempre recibirás un presupuesto claro, detallado y sin sorpresas.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>¿Utilizáis productos de limpieza profesionales?</summary>
-                    <p>Sí. Utilizamos productos específicos para limpieza post-obra, diseñados para eliminar polvo fino,
-                        restos de pintura, cemento o silicona sin dañar superficies delicadas.
-                        Todos los productos están homologados y son seguros para viviendas con niños, mascotas o
-                        personas
-                        sensibles.
-                        Además, empleamos herramientas profesionales como aspiradoras industriales, paños de microfibra
-                        especiales, desincrustantes controlados y neutralizadores de residuos.
-                        El objetivo es dejar cada estancia en un estado impecable y totalmente lista para su uso.</p>
-                </details>
-            </div>
-        </section>
+      <!-- Trust Badges -->
+      <div class="trust-badges-section">
+        <div class="trust-badge-item">
+          <div class="trust-badge-number">100%</div>
+          <div class="trust-badge-label">Satisfacción</div>
+          <div class="trust-badge-sub">Garantizada</div>
+        </div>
+        <div class="trust-badge-item">
+          <div class="trust-badge-number">5★</div>
+          <div class="trust-badge-label">Valoración Media</div>
+          <div class="trust-badge-sub">Excelencia</div>
+        </div>
+        <div class="trust-badge-item">
+          <div class="trust-badge-number">500+</div>
+          <div class="trust-badge-label">Reseñas</div>
+          <div class="trust-badge-sub">Verificadas</div>
+        </div>
+        <div class="trust-badge-item">
+          <div class="trust-badge-number">ISO</div>
+          <div class="trust-badge-label">Certificación</div>
+          <div class="trust-badge-sub">Oficial</div>
+        </div>
+      </div>
 
-        <!-- CONTACTO (UNA SOLA TARJETA) -->
-        <section id="contacto" class="section section-contact reveal">
-            <div class="contact-layout">
-                <div class="contact-card">
-                    <span class="section-kicker">Contacta con nosotros</span>
-                    <h2>Pide ahora tu presupuesto personalizado</h2>
-                    <p>
-                        Cuéntanos brevemente qué necesitas y si ya has terminado la obra. Te responderemos lo antes
-                        posible
-                        con una propuesta ajustada.
-                    </p>
+      <!-- Social Proof CTA -->
+      <div class="social-proof-cta">
+        <p class="social-proof-text">
+          <span class="social-proof-highlight">Únase a más de 5,000 clientes satisfechos</span> que han confiado en nuestra excelencia
+        </p>
+        <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20me%20gustaría%20solicitar%20información" target="_blank" rel="noopener noreferrer" class="btn-social-proof">
+          Solicitar Mi Presupuesto Ahora
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- FAQ Section -->
+  <section id="faq" class="section bg-white">
+    <div class="decorative-circle top-right"></div>
+    <div class="decorative-circle bottom-left-dark"></div>
 
+    <div class="container-faq">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">Preguntas Frecuentes</div>
+        <h2 class="section-title">
+          Resolvemos Sus <span class="text-gold">Dudas</span>
+        </h2>
+        <p class="section-description">
+          Todo lo que necesita saber sobre nuestros servicios premium
+        </p>
+      </div>
 
-                    <div class="contact-card-inner">
-                        <div class="contact-card-left">
-                            <div class="contact-info-section">
-                                <p><strong>También puedes llamarnos o escribirnos directamente:</strong></p>
-                                <p><strong>Teléfono:</strong> <a href="tel:+34911222333">+34 911 222 333</a></p>
-                                <p><strong>Email:</strong> <a
-                                        href="mailto:info@servinstalaciones.com">info@servinstalaciones.com</a></p>
-                                <p class="social-note">
-                                    Horario habitual de atención de 9:00 a 20:00 (urgencias 24h por teléfono).
-                                </p>
-                            </div>
+      <!-- FAQ Accordion + Logo -->
+      <div class="faq-grid">
+        <!-- Left side: logo or illustration -->
+        <div class="faq-side">
+          <img src="/assets/img/logo-servinstalaciones.png" alt="ServInstalaciones" class="faq-logo-img">
+        </div>
 
-                            <div class="contact-info-section">
-                                <h3>Estamos también en redes</h3>
-                                <p>Síguenos o escríbenos por tu canal favorito. Respondemos en el menor tiempo posible.
-                                </p>
-                                <div class="social-icons">
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                                        class="social-icon fb" aria-label="Facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                                        class="social-icon ig" aria-label="Instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://wa.me/34911222333" target="_blank" rel="noopener"
-                                        class="social-icon wa" aria-label="WhatsApp">
-                                        <i class="fab fa-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué garantía ofrecen en sus servicios?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Todos nuestros servicios cuentan con una garantía integral de 5 años que cubre tanto materiales como mano de obra. Utilizamos únicamente materiales certificados de las mejores marcas del mercado. Además, ofrecemos un servicio de mantenimiento preventivo anual gratuito durante el primer año.
+          </div>
+        </div>
 
-                        <div class="contact-card-right">
-                            <h3>Nuestra Zona de Servicio</h3>
-                            <p>Madrid capital y área metropolitana</p>
-                            <div class="map-wrapper-small">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194346.3207866275!2d-3.8196207!3d40.4378698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses"
-                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                    title="Mapa de Madrid - Zona de servicio">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tiempo tardan en realizar un servicio de fontanería o limpieza post-obra?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            El tiempo depende de la complejidad del proyecto. Para instalaciones de fontanería premium, generalmente entre 2-5 días. La limpieza post-obra se completa en 1-3 días según el tamaño de la propiedad. Siempre proporcionamos un cronograma detallado antes de comenzar y nos comprometemos a cumplir los plazos acordados.
+          </div>
+        </div>
 
-    </main>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Ofrecen servicio de urgencias 24/7?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Sí, disponemos de un equipo de urgencias 24/7 todos los días del año. Entendemos que las emergencias no tienen horario. Nuestro tiempo de respuesta para urgencias es de menos de 2 horas en Madrid ciudad y área metropolitana. El servicio de urgencias tiene un coste adicional que se detalla en el presupuesto.
+          </div>
+        </div>
 
-    <!-- Botón flotante Llamar -->
-    <a href="tel:+34911222333" class="call-float" aria-label="Llamar ahora por teléfono">
-        <i class="fas fa-phone-alt" aria-hidden="true"></i>
-        <span class="call-text">Llamar ahora<br><strong>911 222 333</strong></span>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Trabajan con materiales de alta gama?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Absolutamente. Nos especializamos en instalaciones premium con marcas de lujo como Grohe, Hansgrohe, Villeroy & Boch, Duravit, y otras marcas de alto standing. Todos nuestros materiales cuentan con certificaciones de calidad europeas. Ofrecemos también asesoramiento personalizado para la selección de materiales según su proyecto.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se calcula el presupuesto?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Ofrecemos presupuestos totalmente transparentes y sin sorpresas. Realizamos una visita técnica gratuita para evaluar el proyecto, tras la cual entregamos un presupuesto detallado por partidas. El presupuesto incluye materiales, mano de obra, gestión de residuos y garantías. No hay costes ocultos.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué incluye el servicio de limpieza post-obra premium?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Nuestro servicio de limpieza post-obra premium incluye: eliminación completa de residuos y escombros, limpieza profunda de todas las superficies, pulido de suelos, limpieza de ventanas y cristales, desinfección completa, eliminación de manchas de pintura y cemento, y limpieza de sistemas de ventilación. Dejamos su propiedad lista para estrenar.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Tienen seguro de responsabilidad civil?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Sí, contamos con un seguro de responsabilidad civil profesional que cubre cualquier eventualidad durante la ejecución de los trabajos. Además, todo nuestro personal está dado de alta en la Seguridad Social y cuenta con la formación y certificaciones necesarias. Trabajamos con total transparencia y profesionalidad.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Atienden proyectos fuera de Madrid?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Aunque nuestra base principal está en Madrid, atendemos proyectos en toda la Comunidad de Madrid y provincias limítrofes. Para proyectos especiales de gran envergadura, estudiamos cada caso de forma personalizada. Consulte disponibilidad para su ubicación específica sin compromiso.
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ CTA -->
+      <div class="faq-cta">
+        <p class="faq-cta-title">¿Tiene alguna otra pregunta?</p>
+        <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20tengo%20una%20consulta%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" class="btn-faq">
+          Contáctenos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="section bg-dark">
+    <div class="decorative-circle-dark top-right"></div>
+    <div class="decorative-circle-dark bottom-left"></div>
+
+    <div class="container-wide">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-badge">Contacto</div>
+        <h2 class="section-title text-white">
+          Estamos Listos Para <span class="text-gold">Atenderle</span>
+        </h2>
+        <p class="section-description text-light">
+          Atención personalizada 24/7 para sus proyectos de alto standing
+        </p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">Teléfono</h3>
+          <a href="tel:+34671422554" class="contact-link">+34 671 422 554</a>
+          <p class="contact-note">Atención inmediata</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">Email</h3>
+          <a href="mailto:info@servinstalaciones.com" class="contact-link">info@servinstalaciones.com</a>
+          <p class="contact-note">Respuesta en 24h</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">Ubicación</h3>
+          <p class="contact-text">Madrid, España</p>
+          <p class="contact-note">Toda la Comunidad</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">Horario</h3>
+          <p class="contact-text">24 Horas</p>
+          <p class="contact-note">7 días a la semana</p>
+        </div>
+      </div>
+
+      <!-- Main CTA -->
+      <div class="contact-cta-main">
+        <h3 class="contact-cta-title">¿Listo para transformar su espacio?</h3>
+        <p class="contact-cta-text">
+          Solicite su presupuesto personalizado sin compromiso. Un equipo de expertos le atenderá de forma inmediata.
+        </p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20me%20gustaría%20solicitar%20un%20presupuesto%20personalizado" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <svg class="icon-whatsapp" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Presupuesto por WhatsApp
+          </a>
+          <a href="tel:+34671422554" class="btn-call">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Llamar Ahora
+          </a>
+        </div>
+        <p class="contact-cta-note">
+          ✓ Atención personalizada  ✓ Presupuesto en 24h  ✓ Primera consulta gratuita
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-grid">
+        <!-- Company Info -->
+        <div class="footer-column">
+          <h3 class="footer-logo">
+            Serv<span class="text-gold">Instalaciones</span>
+          </h3>
+          <p class="footer-text">
+            Servicios premium de fontanería y limpieza post-obra para clientes exigentes.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4 class="footer-title">Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li>Instalaciones de Fontanería</li>
+            <li>Limpieza Post-Obra</li>
+            <li>Mantenimiento Integral</li>
+            <li>Servicio de Urgencias 24/7</li>
+            <li>Garantía de Calidad</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <div>
+                <a href="tel:+34671422554">+34 671 422 554</a>
+                <p class="footer-note">24/7 Disponible</p>
+              </div>
+            </li>
+            <li>
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <a href="mailto:info@servinstalaciones.com">info@servinstalaciones.com</a>
+            </li>
+            <li>
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Madrid, España</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 ServInstalaciones. Todos los derechos reservados.
+        </p>
+        <div class="footer-legal">
+            <a href="politica.html">Política de Privacidad</a>
+            <a href="terminos.html">Términos y Condiciones</a>
+            <a href="aviso.html">Aviso Legal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Per-page script -->
+    <script src="js/index.js" defer></script>
+
+    <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <div class="whatsapp-tooltip" id="whatsappTooltip">
+      <button class="tooltip-close" id="tooltipClose">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <p class="tooltip-title">¿Necesita ayuda?</p>
+      <p class="tooltip-text">Escríbanos por WhatsApp</p>
+    </div>
+
+    <a href="https://wa.me/34671422554?text=Hola%20ServInstalaciones,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios%20premium." target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+      <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <span class="whatsapp-pulse"></span>
     </a>
 
-    <!-- Botón flotante WhatsApp -->
-    <a href="https://wa.me/34911222333?text=Hola,%20necesito%20información%20sobre%20sus%20servicios"
-        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        <span class="whatsapp-text">Chatea con nosotros</span>
-    </a>
-
-    <!-- FOOTER -->
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-inner">
-            <div class="footer-main">
-                <p>&copy; 2025 Servinstalaciones · Fontanería &amp; Limpieza Post-Obra. Todos los derechos
-                    reservados.</p>
-                <p class="footer-sub">Empresa de servicios con sede en Madrid.</p>
-                <p class="footer-dev">Desarrollado por J.M.R.S</p>
-            </div>
-            <div class="footer-links">
-                <a href="#" onclick="openModal('aviso'); return false;">Aviso legal</a>
-                <a href="#" onclick="openModal('privacidad'); return false;">Política de privacidad</a>
-                <a href="#" onclick="openModal('cookies'); return false;">Política de cookies</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modals -->
-    <div id="avisoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('aviso')">&times;</span>
-            <h2>Aviso Legal</h2>
-            <p><strong>Datos identificativos:</strong></p>
-            <p>Titular: Servinstalaciones S&R<br>
-                NIF: B12345678<br>
-                Domicilio: Madrid, España<br>
-                Email: info@Servinstalaciones.com<br>
-                Teléfono: +34 912 345 678</p>
-
-            <p><strong>Objeto:</strong></p>
-            <p>El presente aviso legal regula el uso del sitio web de Servicios Pro, del que es titular la empresa
-                anteriormente mencionada.</p>
-
-            <p><strong>Condiciones de uso:</strong></p>
-            <p>La navegación por este sitio web atribuye la condición de usuario y conlleva la aceptación plena de todas
-                las condiciones incluidas en este Aviso Legal.</p>
-
-            <p><strong>Propiedad intelectual:</strong></p>
-            <p>Todos los contenidos del sitio web, incluyendo textos, imágenes, diseño gráfico, código fuente, logos y
-                demás elementos, son propiedad de Servicios Pro o de terceros que han autorizado su uso, y están
-                protegidos por derechos de propiedad intelectual.</p>
-        </div>
+    <div class="whatsapp-helper">
+      <div class="online-indicator"></div>
+      <span>Estamos en línea</span>
     </div>
 
-    <div id="privacidadModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('privacidad')">&times;</span>
-            <h2>Política de Privacidad</h2>
-            <p><strong>Responsable del tratamiento:</strong></p>
-            <p>Servinstalaciones S&R, con domicilio en, Madrid, España, es el responsable del tratamiento de los datos
-                personales
-                recogidos a través de este sitio web.</p>
+    <div class="whatsapp-notification"></div>
+  </div>
 
-            <p><strong>Finalidad del tratamiento:</strong></p>
-            <p>Los datos personales que nos facilite serán tratados con las siguientes finalidades:</p>
-            <ul>
-                <li>Gestionar las solicitudes de información y presupuestos</li>
-                <li>Prestar los servicios contratados</li>
-                <li>Enviar comunicaciones comerciales, si ha dado su consentimiento</li>
-            </ul>
-
-            <p><strong>Legitimación:</strong></p>
-            <p>La base legal para el tratamiento de sus datos es el consentimiento expreso que nos otorga al
-                contactarnos o contratar nuestros servicios.</p>
-
-            <p><strong>Conservación de datos:</strong></p>
-            <p>Los datos se conservarán mientras se mantenga la relación comercial o durante los años necesarios para
-                cumplir con las obligaciones legales.</p>
-
-            <p><strong>Derechos:</strong></p>
-            <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición
-                enviando un email a info@Servinstalaciones.com.</p>
-        </div>
-    </div>
-
-    <div id="cookiesModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('cookies')">&times;</span>
-            <h2>Política de Cookies</h2>
-            <p><strong>¿Qué son las cookies?</strong></p>
-            <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web.
-                Permiten que el sitio web recuerde sus acciones y preferencias durante un período de tiempo.</p>
-
-            <p><strong>Tipos de cookies que utilizamos:</strong></p>
-            <p><strong>Cookies técnicas:</strong> Necesarias para el funcionamiento del sitio web y no pueden ser
-                desactivadas.</p>
-            <p><strong>Cookies de preferencias:</strong> Permiten recordar sus elecciones (como el idioma o la región).
-            </p>
-
-            <p><strong>Gestión de cookies:</strong></p>
-            <p>Puede configurar su navegador para aceptar o rechazar cookies. La desactivación de ciertas cookies puede
-                afectar a la funcionalidad del sitio web.</p>
-
-            <p><strong>Más información:</strong></p>
-            <p>Para más información sobre las cookies que utilizamos y cómo gestionarlas, puede contactarnos en
-                info@Servinstalaciones.com.</p>
-        </div>
-    </div>
-
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-content">
-            <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa navegando,
-                consideramos que acepta su uso.
-                <a href="#" onclick="openModal('cookies'); return false;" style="color: var(--accent);">Más
-                    información</a>
-            </p>
-            <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
-        </div>
-    </div>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
